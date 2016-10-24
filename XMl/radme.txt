@@ -1,0 +1,41 @@
+定义XML时的约束形式：
+
+　　｜－DTD
+
+　　｜－Schema
+
+解析XML的方式：
+
+　　｜－DOM（Document Object Model）解析
+
+　　    优点：W3C推出模型，非常适合增删改查（CRUD）
+
+　　　　缺点：必须把XML文件全部读入内存才可以操作
+
+　　｜－SAX（Simple API for XML）解析
+
+　　            优点：在读取文档的时候，即对文档进行处理，而不必等到整个文档装载完才会文档进行操作
+
+　　　　缺点：只能进行查询
+
+解析时用到的开发包：
+
+　　｜－dom4j
+
+　　　　是开源组织推出的解析开发包。最好的，都在用。
+
+　　｜－JAXP(Java API for XML Processing)
+
+　　　　是SUN公司推出的解析标准实现。
+
+        org.w3c.dom:提供DOM方式解析XML的标准接口
+
+        org.xml.sax:提供SAX方式解析XML的标准接口
+
+        javax.xml:提供了解析XML文档的类
+
+　　｜－JDom
+
+              是开源组织推出的解析开发包。
+
+    
